@@ -1,17 +1,18 @@
 {
     "RCON_PORT": "25575",
     "ADMIN_PASSWORD": "yourRCONpassword",
-    "RCON_ADDRESS": "127.0.0.1",
-    "THRESHOLD": 80,
-    "CHECK_INTERVAL_SECONDS": 300,
-    "SERVER_PROCESS_NAME": "PalServer",
-    "SERVER_EXECUTABLE_PATH": "C:\\Your Network\\GameServers\\steamapps\\common\\PalServer\\PalServer.exe",
-    "ARRCON_EXECUTABLE_PATH": "C:\\Your Network\\Development\\ARRCON\\ARRCON.exe",
+    "RCON_ADDRESS": "localhost",
+    "THRESHOLD": 72,
+    "CHECK_INTERVAL_SECONDS": 120,
+    "DURATION_THRESHOLD_SECONDS": 600,
+    "SERVER_PROCESS_NAME": "PalServer-Win64-Test-Cmd",
+    "SERVER_EXECUTABLE_PATH": "C:\\Darkbyte Network\\GameServers\\steamapps\\common\\PalServer\\PalServer.exe",
+    "ARRCON_EXECUTABLE_PATH": "C:\\Darkbyte Network\\Development\\ARRCON\\ARRCON.exe",
     "SERVER_LAUNCH_PARAMETERS": "-useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS",
     "ARRCON_COMMANDS": {
         "BROADCAST": "broadcast",
         "SAVE": "save",
         "SHUTDOWN": "shutdown"
     },
-    "BACKUP_BAT_PATH": "Backup.bat"
+    "BACKUP_BAT_PATH": "backup.bat"
 }
