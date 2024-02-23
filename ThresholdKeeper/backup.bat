@@ -36,8 +36,8 @@ mkdir "%backupFolder%"
 rem Copy game files to the backup folder
 xcopy /s /e "%gamePath%" "%backupFolder%"
 
-rem Zip up the backup folder
-powershell -nologo -noprofile -command "& {Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::CreateFromDirectory('%backupFolder%', '%backupFolder%.zip');}"
+rem Zip up the backup folder and delete the folder after zipping
+powershell -nologo -noprofile -command "& {Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::CreateFromDirectory('%backupFolder%', '%backupFolder%.zip'); Remove-Item -Path '%backupFolder%' -Recurse -Force; }"
 
 echo Backup successfully created at %backupFolder%.zip
 
