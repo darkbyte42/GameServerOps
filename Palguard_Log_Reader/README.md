@@ -11,7 +11,11 @@ To use this script, you will need Python installed on your computer. If you do n
 
 3.  **Prepare Your Logs**: Ensure your log files are in a text format (`.txt`) and gathered in a single folder that the script can access.
 
-## Usage  
+## Usage Drag & Drop
+
+1.  **Drag the Prepared Logs**: Drag the .txt log files or the entire log folder of .txt files directly on the .bat file for instant usage.
+
+## Usage with Windows CMD 
 
 1.  **Open Command Prompt**: Open the Command Prompt (CMD) on Windows or Terminal on macOS/Linux.  
 
